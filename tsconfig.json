@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "module": "esnext",
+    "target": "es5",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "strict": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "baseUrl": "./",
+    "paths": {
+      "ol": ["node_modules/ol/src"],
+      "ol/*": ["node_modules/ol/src"]
+    },
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "./JavaScripts/*.ts",
+    "node_modules/ol/**/*"
+  ],
+  "typeAcquisition": {
+    "exclude": ["ol"]
+  }
+}
