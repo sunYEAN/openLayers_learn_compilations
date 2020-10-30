@@ -37,6 +37,9 @@ module.exports = {
             }
         ]
     },
+    devServer: {
+        host: '0.0.0.0'
+    },
     plugins: [
         new MiniCssExtractPlugin(),
         new WebpackHtmlPlugin({
