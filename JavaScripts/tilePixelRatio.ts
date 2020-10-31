@@ -76,4 +76,4 @@ document.getElementById('actionBar').addEventListener('click', function () {
     const layers = map.getLayers();
     visible = !visible;
     layers.item(1).setVisible(visible);
-})
+});
