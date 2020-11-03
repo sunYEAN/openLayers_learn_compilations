@@ -9,6 +9,7 @@
     "sourceMap": true,
     "allowJs": true,
     "baseUrl": "./",
+    "resolveJsonModule": true,
     "paths": {
       "ol": ["node_modules/ol/src"],
       "ol/*": ["node_modules/ol/src"]

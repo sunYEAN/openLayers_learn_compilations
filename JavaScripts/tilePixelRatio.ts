@@ -72,7 +72,9 @@ let map = new Map({
     ])
 });
 
-document.getElementById('actionBar').addEventListener('click', function () {
+const bar = document.getElementById('actionBar');
+
+(bar as HTMLElement).addEventListener('click', function (e) {
     const layers = map.getLayers();
     visible = !visible;
     layers.item(1).setVisible(visible);

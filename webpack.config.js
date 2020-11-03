@@ -34,6 +34,10 @@ module.exports = {
                     'css-loader',
                     'less-loader'
                 ]
+            },
+            {
+                test: /\.json$/,
+                loader: "json-loader"
             }
         ]
     },
