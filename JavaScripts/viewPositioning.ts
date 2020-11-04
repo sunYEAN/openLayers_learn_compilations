@@ -61,39 +61,39 @@ const map = new Map({
     view: view,
 });
 
-const zoomtoswitzerland = document.getElementById('zoomtoswitzerland');
-(zoomtoswitzerland as HTMLButtonElement).addEventListener(
-    'click',
-    function () {
-        const feature = source.getFeatures()[0];
-        const polygon = feature.getGeometry();
-        view.fit(polygon, {padding: [170, 50, 30, 150]});
-    },
-    false
-);
-
-const zoomtolausanne = document.getElementById('zoomtolausanne');
-(zoomtolausanne as HTMLButtonElement).addEventListener(
-    'click',
-    function () {
-        const feature = source.getFeatures()[1];
-        const point = feature.getGeometry();
-        view.fit(point, {
-            duration: 200,
-            minResolution: 50
-        });
-    },
-    false
-);
-
-const centerlausanne = document.getElementById('centerlausanne');
-(centerlausanne as HTMLButtonElement).addEventListener(
-    'click',
-    function () {
-        const feature = source.getFeatures()[3];
-        const point = feature.getGeometry();
-        const size = map.getSize();
-        view.centerOn(point.getCoordinates(), size, [window.innerWidth / 2, window.innerHeight / 2]);
-    },
-    false
-);
+// const zoomtoswitzerland = document.getElementById('zoomtoswitzerland');
+// (zoomtoswitzerland as HTMLButtonElement).addEventListener(
+//     'click',
+//     function () {
+//         const feature = source.getFeatures()[0];
+//         const polygon = feature.getGeometry();
+//         view.fit(polygon, {padding: [170, 50, 30, 150]});
+//     },
+//     false
+// );
+//
+// const zoomtolausanne = document.getElementById('zoomtolausanne');
+// (zoomtolausanne as HTMLButtonElement).addEventListener(
+//     'click',
+//     function () {
+//         const feature = source.getFeatures()[1];
+//         const point = feature.getGeometry();
+//         view.fit(point, {
+//             duration: 200,
+//             minResolution: 50
+//         });
+//     },
+//     false
+// );
+//
+// const centerlausanne = document.getElementById('centerlausanne');
+// (centerlausanne as HTMLButtonElement).addEventListener(
+//     'click',
+//     function () {
+//         const feature = source.getFeatures()[3];
+//         const point = feature.getGeometry();
+//         const size = map.getSize();
+//         view.centerOn(point.getCoordinates(), size, [window.innerWidth / 2, window.innerHeight / 2]);
+//     },
+//     false
+// );

@@ -97,7 +97,7 @@ class Validator<T> {
         username,
         password,
         telephone,
-    } = this;
+    }: any = this;
 
     const validate = new Validator({
         company: company.value,

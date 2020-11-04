@@ -38,6 +38,17 @@ module.exports = {
             {
                 test: /\.json$/,
                 loader: "json-loader"
+            },
+            {
+                test: /\.(png|jpg|gif)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            esModule: false
+                        }
+                    }
+                ]
             }
         ]
     },
